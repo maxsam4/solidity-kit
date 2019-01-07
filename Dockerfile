@@ -2,7 +2,7 @@ FROM ubuntu:bionic
 
 LABEL maintainer="Mudit Gupta <hi@mudit.blog>"
 LABEL name="solidity-kit"
-LABEL version="latest"
+LABEL version="solc-0.4.24"
 
 ENV DEBIAN_FRONTEND noninteractive
 
