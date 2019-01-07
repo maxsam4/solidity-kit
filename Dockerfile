@@ -20,7 +20,6 @@ RUN apt install yarn npm solc git-core unzip -y
 RUN curl -L -o solidity-ubuntu-trusty.zip https://github.com/ethereum/solidity/releases/download/v0.4.24/solidity-ubuntu-trusty.zip
 RUN unzip solidity-ubuntu-trusty.zip
 RUN mv solc /usr/bin/solc
-RUN rm solc
 RUN rm lllc
 RUN rm solidity-ubuntu-trusty.zip
 
