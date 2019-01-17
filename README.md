@@ -1,11 +1,18 @@
 # solidity-kit
 Basic docker images with tools for solidity development and CI.
 
-Currently, there is only a single tag `latest` that contains Ubuntu bionic + node 8 + yarn + npm + solc 0.5 (native) + truffle 5.
+Currently, there are two tags:
+- `latest`: solc 0.5 (native) + Ubuntu bionic + node 8 + yarn + npm + truffle 5 + git.
+- `0.4.24`: solc 0.4.24 (native) + Ubuntu bionic + node 8 + yarn + npm + truffle 5 + git.
 
 The builds are hosted on docker hub and can be fetched directly from the repo `maxsam4/solidity-kit`.
 
 To pull the docker image:
 ```
 docker pull maxsam4/solidity-kit
+```
+
+The default tag is latest. To pull `0.4.24` use:
+```
+docker pull maxsam4/solidity-kit:0.4.24
 ```
