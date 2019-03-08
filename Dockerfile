@@ -15,7 +15,7 @@ RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources
 RUN add-apt-repository ppa:ethereum/ethereum
 
 RUN apt update
-RUN apt install yarn npm solc git-core -y
+RUN apt install yarn npm solc git-core libz3-dev -y
 
 RUN solc --version
 RUN nodejs --version
