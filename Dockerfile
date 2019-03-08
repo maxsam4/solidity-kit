@@ -15,7 +15,7 @@ RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources
 RUN add-apt-repository ppa:ethereum/ethereum
 
 RUN apt update
-RUN apt install yarn npm solc git-core unzip -y
+RUN apt install yarn npm solc git-core unzip libz3-dev -y
 
 RUN curl -L -o solidity-ubuntu-trusty.zip https://github.com/ethereum/solidity/releases/download/v0.4.24/solidity-ubuntu-trusty.zip
 RUN unzip solidity-ubuntu-trusty.zip
